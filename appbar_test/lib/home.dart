@@ -31,6 +31,9 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        width: MediaQuery.of(context).size.width * 0.605,
+      ),
       body: CustomScrollView(
         controller: _scrollController,
         slivers: [
@@ -51,7 +54,6 @@ class _HomeState extends State<Home> {
             floating: false,
             expandedHeight: kExpandedHeight,
             centerTitle: true,
-            leading: Icon(Icons.menu_rounded),
           ),
           SliverList(
             delegate: SliverChildListDelegate(List<Text>.generate(100, (int i) {
