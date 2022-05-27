@@ -1,60 +1,62 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
+
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+const kExpandedHeight = 300.0;
+
+class _HomeState extends State<Home> {
+  late ScrollController _scrollController;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _scrollController = ScrollController()..addListener(() => setState(() {}));
+  }
+
+  bool get _showTitle {
+    print(_scrollController.hasClients &&
+        _scrollController.offset > kExpandedHeight - kToolbarHeight);
+
+    return _scrollController.hasClients &&
+        _scrollController.offset > kExpandedHeight - kToolbarHeight;
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*
-      appBar: AppBar(
-        title: Text('AppBar Test'),
-        centerTitle: true,
-      ),
-      */
       body: CustomScrollView(
+        controller: _scrollController,
         slivers: [
           SliverAppBar(
-            title: Text('AppBar'),
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text(
-                'Flexible AppBar',
-                style: TextStyle(fontSize: 14.0),
-              ),
-              background: Image.asset(
-                'assets/images/nezuko.jpeg',
-                fit: BoxFit.cover,
-              ),
-              centerTitle: false,
-              collapseMode: CollapseMode.none,
-            ),
+            title: _showTitle ? Text('AppBar') : null,
+            flexibleSpace: _showTitle
+                ? null
+                : FlexibleSpaceBar(
+                    title: Text('_SliverAppBar'),
+                    background: Image.asset(
+                      'assets/images/nezuko.jpeg',
+                      fit: BoxFit.cover,
+                    ),
+                    centerTitle: false,
+                    collapseMode: CollapseMode.none,
+                  ),
             pinned: true,
             floating: false,
-            expandedHeight: MediaQuery.of(context).size.height * 0.305,
+            expandedHeight: kExpandedHeight,
             centerTitle: true,
             leading: Icon(Icons.menu_rounded),
           ),
           SliverList(
-            delegate: SliverChildListDelegate([
-              Container(
-                height: 950,
-                width: 100,
-                decoration: BoxDecoration(
-                  color: Colors.deepPurple,
-                  border: Border.all(color: Colors.black, width: 2.0),
-                ),
-                child: Center(
-                  child: Text(
-                    'Scroll',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
-            ]),
+            delegate: SliverChildListDelegate(List<Text>.generate(100, (int i) {
+              return Text("List item $i");
+            })),
           ),
         ],
       ),
