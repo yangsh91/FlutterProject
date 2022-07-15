@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "539407331155",
+    "project_id": "jaradalab",
+    "storage_bucket": "jaradalab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539407331155:android:44229092d1aed00cc2fba6",
+        "android_client_info": {
+          "package_name": "com.lab.Jaradalab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539407331155-8lkjrqism3q07fdu93bdl51ir1ktea22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBco67l2ORX1HoT2EHvcYZ4Mv45Ef9Igh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539407331155-8lkjrqism3q07fdu93bdl51ir1ktea22.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "539407331155-gh1cbfrslchugbb0h9tbkdbfc3dplbrb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.Jaradalab"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539407331155:android:9dc0e94382a871d3c2fba6",
+        "android_client_info": {
+          "package_name": "com.lab.Jaradalab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539407331155-8lkjrqism3q07fdu93bdl51ir1ktea22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBco67l2ORX1HoT2EHvcYZ4Mv45Ef9Igh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539407331155-8lkjrqism3q07fdu93bdl51ir1ktea22.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "539407331155-gh1cbfrslchugbb0h9tbkdbfc3dplbrb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.jaradalab"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

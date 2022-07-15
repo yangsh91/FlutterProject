@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1000614234913",
+    "project_id": "maltaja",
+    "storage_bucket": "maltaja.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000614234913:android:d1aa28fd605d249a2b8c60",
+        "android_client_info": {
+          "package_name": "com.example.maltaja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000614234913-fet184ovijhgnfqogs6d47v62vd8tra4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.maltaja",
+            "certificate_hash": "3459f3d866bd3fd7fcba29abb63ea9ebb9111d03"
+          }
+        },
+        {
+          "client_id": "1000614234913-dch8tri5j5e59jarknqirqf6tcp8qcfc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRWlutRjKc6h4C8r46ux9ri5-udtuQOtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000614234913-dch8tri5j5e59jarknqirqf6tcp8qcfc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1000614234913-fo1v68uijcpndpfo2v26bqi5pljqbi95.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.maltaja"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
